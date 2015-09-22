@@ -22,7 +22,10 @@ caffe_option(BUILD_python "Build Python wrapper" ON)
 set(python_version "2" CACHE STRING "Specify which python version to use")
 caffe_option(BUILD_matlab "Build Matlab wrapper" ON IF UNIX OR APPLE)
 caffe_option(BUILD_docs   "Build documentation" ON IF UNIX OR APPLE)
-caffe_option(BUILD_python_layer "Build the Caffe python layer" ON)
+caffe_option(BUILD_python_layer "Build the Caffe Python layer" ON)
+caffe_option(USE_LMDB "Build with lmdb" ON)
+caffe_option(USE_LEVELDB "Build with levelDB" ON)
+caffe_option(USE_OPENCV "Build with OpenCV support" ON)
 
 # ARUN:
 # ---[ Matlab path - Got the variable name from FindMatlabMex.cmake
